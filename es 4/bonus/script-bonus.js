@@ -33,20 +33,18 @@ var variabileRandom = '';
 for (var key in scuola) {  // ciclo nell'oggetto
 
     if (key === 'studente') { // qui scelgo l'array
-        variabileRandom += '<li>Studente: ';
-
+        
         for (var x = 0; x < scuola[key].length; x++) { // ciclo l'array dei student
+            variabileRandom += '<li>Studente: ';
             variabileRandom += scuola[key][x]['nome'] + ', ';
             variabileRandom += scuola[key][x]['cognome'] + ', ';
             variabileRandom += scuola[key][x]['age'] + ', ';
-            variabileRandom += scuola[key][x]['descrizione'] + ', </br>';
-
+            variabileRandom += scuola[key][x]['descrizione'] + ', ';
+            variabileRandom += '</li>';
+            
         }
 
-        variabileRandom += '</li>';
 
-    } else {
-        variabileRandom += '<li>' + key + ': ' + scuola[key] + '</li>'
     }
 }
 stampa.innerHTML = variabileRandom;  
