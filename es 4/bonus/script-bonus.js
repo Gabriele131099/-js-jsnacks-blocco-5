@@ -17,8 +17,7 @@ var studenti = {
             cognome: "Rossi",
             age: 23,
             descrizione: ""
-          } 
-          
+          }   
     ]
 }
 
@@ -34,7 +33,7 @@ var variabileRandom = '';
 for (var key in studenti) {  // ciclo nell'oggetto
 
     if (key === 'studente') { // qui scelgo l'array
-        variabileRandom += '<li>Studente: ';
+        variabileRandom += '<li>Studente: ';f
 
         for (var x = 0; x < studenti[key].length; x++) { // ciclo l'array dei student
             variabileRandom += studenti[key][x]['nome'] + ', ';
