@@ -33,7 +33,7 @@ var variabileRandom = '';
 for (var key in studenti) {  // ciclo nell'oggetto
 
     if (key === 'studente') { // qui scelgo l'array
-        variabileRandom += '<li>Studente: ';f
+        variabileRandom += '<li>Studente: ';
 
         for (var x = 0; x < studenti[key].length; x++) { // ciclo l'array dei student
             variabileRandom += studenti[key][x]['nome'] + ', ';
