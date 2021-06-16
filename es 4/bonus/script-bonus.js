@@ -1,5 +1,5 @@
-var scuola = {
-    studente: [
+
+   var  studente = [
         {
             nome: "Tony",
             cognome: "D'Agata",
@@ -19,34 +19,25 @@ var scuola = {
             descrizione: ""
           }   
     ]
-}
 
-for (var i = 0; i < scuola.studente.length; i++) {
-        scuola.studente[i].descrizione=(prompt("descrivi lo studente"))
-}
+    var stampa = document.getElementById('stampa');
+    var variabileRandom = '';
 
-var stampa = document.getElementById('stampa');
+for (var i = 0; i < studente.length; i++) {
+        studente[i].descrizione=(prompt("descrivi lo studente"))
+        
+        variabileRandom += '<li>Studente: ';
+        variabileRandom += studente[i]['nome'] + ', ';
+        variabileRandom += studente[i]['cognome'] + ', ';
+        variabileRandom += studente[i]['age'] + ', ';
+        variabileRandom += studente[i]['descrizione'] + ', ';
+        variabileRandom += '</li>';
+    }
+        
+
     
 // stampa.innerHTML = '<li>model: </li>'
-var variabileRandom = '';
 
-for (var key in scuola) {  // ciclo nell'oggetto
-
-    if (key === 'studente') { // qui scelgo l'array
-        
-        for (var x = 0; x < scuola[key].length; x++) { // ciclo l'array dei student
-            variabileRandom += '<li>Studente: ';
-            variabileRandom += scuola[key][x]['nome'] + ', ';
-            variabileRandom += scuola[key][x]['cognome'] + ', ';
-            variabileRandom += scuola[key][x]['age'] + ', ';
-            variabileRandom += scuola[key][x]['descrizione'] + ', ';
-            variabileRandom += '</li>';
-            
-        }
-
-
-    }
-}
 stampa.innerHTML = variabileRandom;  
 
 
