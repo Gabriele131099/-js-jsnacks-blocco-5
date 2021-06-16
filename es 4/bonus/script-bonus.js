@@ -1,5 +1,5 @@
 
-   var  studente = [
+   var studente = [
         {
             nome: "Tony",
             cognome: "D'Agata",
@@ -33,9 +33,6 @@ for (var i = 0; i < studente.length; i++) {
         variabileRandom += studente[i]['descrizione'] + ', ';
         variabileRandom += '</li>';
     }
-        
-
-    
 // stampa.innerHTML = '<li>model: </li>'
 
 stampa.innerHTML = variabileRandom;  
