@@ -13,7 +13,7 @@ var player = {
     nome:"Marco" , 
     cognome: "Rossi", 
     anno:"1980",
-    punteggio:10
+    punteggio:Math.floor(Math.random()*150)
     },{
     nome:"Giovanni" , 
     cognome: "Sanna", 
