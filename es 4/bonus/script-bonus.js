@@ -1,4 +1,3 @@
-
    var studente = [
         {
             nome: "Tony",
@@ -20,21 +19,21 @@
           }   
     ]
 
-    var stampa = document.getElementById('stampa');
-    var variabileRandom = '';
+    
+    var stampa = document.getElementById('stampa') // stampa.innerHTML = '<li>studente: </li>'
+    var variabileRandom = '' //variabile che avrà il contenuto da stampare
 
-for (var i = 0; i < studente.length; i++) {
-        studente[i].descrizione=(prompt("descrivi lo studente"))
+for (var i = 0; i < studente.length; i++) { //finchè I è minore della lunghezza di array Studenti
+        studente[i].descrizione=(prompt("descrivi lo studente")) //richiede e carica la descrzione degli studenti
         
-        variabileRandom += '<li>Studente: ';
-        variabileRandom += studente[i]['nome'] + ', ';
-        variabileRandom += studente[i]['cognome'] + ', ';
-        variabileRandom += studente[i]['age'] + ', ';
-        variabileRandom += studente[i]['descrizione'] + ', ';
-        variabileRandom += '</li>';
+        variabileRandom += '<li>Studente: '    // voglio stampare in un ul , tramide degli LI
+        variabileRandom += studente[i]['nome'] + ', '  // il nome il cognome l'età e la descrizione
+        variabileRandom += studente[i]['cognome'] + ', '   //dello studente I
+        variabileRandom += studente[i]['age'] + ', '
+        variabileRandom += studente[i]['descrizione'] 
+        variabileRandom += '</li>'
     }
-// stampa.innerHTML = '<li>model: </li>'
 
-stampa.innerHTML = variabileRandom;  
+stampa.innerHTML = variabileRandom  //stampo il contenuto di VARIABILERANDOM
 
 
